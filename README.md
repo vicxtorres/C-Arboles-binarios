@@ -5,11 +5,15 @@ Algoritmos de árboles
 
 -Crear nodo arbol.
 
+
 RECORRIDOS:
 
 -Preorder
+
 -Inorder
+
 -Posorder
+
 
 OTRAS:
 
