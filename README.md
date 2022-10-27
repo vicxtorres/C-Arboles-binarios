@@ -6,7 +6,6 @@ Algoritmos de árboles
 -Crear nodo arbol.
 
 
-
 RECORRIDOS:
 
 -Preorder
@@ -16,6 +15,6 @@ RECORRIDOS:
 -Posorder
 
 
-
 OTRAS:
+
 -Contar cantidad total de nodos
