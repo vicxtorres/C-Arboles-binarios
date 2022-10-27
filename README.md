@@ -1,7 +1,6 @@
 # C-Arboles-binarios
 Algoritmos de árboles
 
-*** FUNCIONES ***
 
 -Crear nodo arbol.
 
