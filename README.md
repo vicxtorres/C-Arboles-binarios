@@ -2,7 +2,7 @@
 Algoritmos de árboles
 
 *** FUNCIONES ***
--Crear nodo arbol.
+Crear nodo arbol.
 
 RECORRIDOS:
 -Preorder
