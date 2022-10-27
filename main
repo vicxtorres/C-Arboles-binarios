@@ -1,0 +1,9 @@
+
+typedef int telemento;
+
+typedef struct nodoArbol
+{
+    telemento dato;
+    struct nodoArbol*izq;
+    struct nodoArbol*der;
+}nodoArbol;
