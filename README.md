@@ -2,12 +2,10 @@
 Algoritmos de árboles
 
 *** FUNCIONES ***
-
 -Crear nodo arbol.
 
 
 RECORRIDOS:
-
 -Preorder
 
 -Inorder
@@ -16,5 +14,4 @@ RECORRIDOS:
 
 
 OTRAS:
-
 -Contar cantidad total de nodos
