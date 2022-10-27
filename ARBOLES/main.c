@@ -3,6 +3,7 @@
 
 typedef int telemento;
 
+///STRUCT DE NODO ARBOL
 typedef struct nodoArbol
 {
     telemento dato;
@@ -10,8 +11,8 @@ typedef struct nodoArbol
     struct nodoArbol*der;
 }nodoArbol;
 
+///PROTOTIPADOS
 nodoArbol* crearNodo (telemento dato);
-//RECORRIDOS DE ARBOLES
 void preorder (nodoArbol*arbolito);
 void inorder (nodoArbol*arbolito);
 void posorder (nodoArbol*arbolito);
@@ -19,23 +20,24 @@ int contarNodos (nodoArbol*arbolito);
 int contarNodos2 (nodoArbol*arbolito);
 
 
-
 int main()
 {
    nodoArbol*arbolito = NULL; //inicializo
-   //cargo datos a mano
-   arbolito = crearNodo(25);
-   //cargo subarbol izquierdo
+    
+   /*** cargo datos a mano: a la derecha van los mayores, a la izquierda los menores ***/
+    
+   arbolito = crearNodo(25); //25 es mi raiz
+   //cargo subarbol izquierdo:
    arbolito->izq = crearNodo(13);
-   arbolito->der = crearNodo(46);
    arbolito->izq->izq = crearNodo(12);
    arbolito->izq->der= crearNodo(14);
-   //cargo subarbol derecho
+   //cargo subarbol derecho:
+   arbolito->der = crearNodo(46);
    arbolito->der->izq = crearNodo(44);
    arbolito->der->der= crearNodo(68);
    arbolito->der->der->izq= crearNodo(67);
 
-   printf("%i", contarNodos2(arbolito)); //funciona
+   printf("%i", contarNodos2(arbolito)); 
 
     return 0;
 }
@@ -50,11 +52,11 @@ nodoArbol* crearNodo (telemento dato)
     return nuevo;
 }
 
-/*      RECORRIDOS
-preorder: visito, izq, der
-inorder: izq, visito, der
-posorder: izq, der, visito
- */
+/*  RECORRIDOS (recursivos)  
+    preorder: visito, izq, der
+    inorder: izq, visito, der         *solo van cambiando el orden de las lineas*      
+    posorder: izq, der, visito
+*/
 
 void preorder (nodoArbol*arbolito)
 {
@@ -87,6 +89,7 @@ void posorder (nodoArbol*arbolito)
 }
 
 
+///OTRAS FUNCIONES
 int contarNodos (nodoArbol*arbolito)
 {
     if (arbolito!=NULL) //si hay datos voy sumando 1 mientras recorro
